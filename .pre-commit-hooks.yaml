@@ -1,0 +1,13 @@
+- id: c7n-validate
+  name: cloud custodian validate
+  description: Validates all Cloud Custodian policy files.
+  entry: custodian validate
+  language: python
+  files: policies/.*\.y?ml$
+
+# - id: c7n-validate-docker
+#   name: cloud custodian validate docker
+#   description: Validates all Cloud Custodian policy files using a Docker container.
+#   entry: cloudcustodian/c7n:0.9.38.0 validate
+#   language: docker_image
+#   pass_filenames: false
