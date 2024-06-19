@@ -3,7 +3,7 @@
   description: Validates all Cloud Custodian policy files.
   entry: custodian validate
   language: python
-  files: (policies\/.*\.y?ml)$
+  files: ^(.*/)?policies\.yaml$
 # - id: c7n-validate-docker
 #   name: cloud custodian validate docker
 #   description: Validates all Cloud Custodian policy files using a Docker container.
